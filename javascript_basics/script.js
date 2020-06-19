@@ -208,53 +208,114 @@ GOOD LUCK 😀
 // ternary operator
 // var firstName = "John";
 // var age = 25;
-
-// age >= 18
+// age >= 30
 //   ? console.log(firstName + " drinks beer. ")
 //   : console.log(firstName + " Drinks Juice. ");
 
 // var drink = age >= 18 ? "beer" : "juice";
 // console.log(drink);
 
-// same as this:
+// // same as this:
 //  if (age >= 18) {
 //      var drink = 'beer';
 //  } else {
-//      var drink = 'juice':
+//      var drink = 'juice';
 //  }
 
-// switch statement
-var age = 20;
-var firstName = "John";
-var job = "cop";
-switch (job) {
-  case "teacher":
-    console.log(firstName + " Teaches kids how to code. ");
-    break;
-  case "driver":
-    console.log(firstName + "Driver drives a uber");
-    break;
-  case "designer":
-    console.log(firstName + " Designs awesome websites. ");
-    break;
-  default:
-    console.log(firstName + " does something else. ");
-    break;
-}
+// // switch statement
+// var age = 20;
+
+// var job = "cop";
+// switch (job) {
+//   case "teacher":
+//     console.log(firstName + " Teaches kids how to code. ");
+//     break;
+//   case "driver":
+//     console.log(firstName + "Driver drives a uber");
+//     break;
+//   case "designer":
+//     console.log(firstName + " Designs awesome websites. ");
+//     break;
+//   default:
+//     console.log(firstName + " does something else. ");
+//     break;
+// }
 
 // var age = 20;
 // var firstName = "John";
-switch (true) {
-  case age < 13:
-    console.log(firstName + " is a boy. ");
-    break;
-  case age >= 13 && age < 20:
-    console.log(firstName + " is a teenager. ");
-    break;
-  case age >= 20 && age < 30:
-    console.log(firstName + " is a young man. ");
-    break;
-  default:
-    console.log(firstName + " is a man. ");
-    break;
+// var firstName = "John";
+// var age = 20;
+
+// var firstName = 'John';
+// var age = 25;
+// switch (true) {
+//   case age < 13:
+//     console.log(firstName + " is a boy. ");
+//     break;
+//   case age >= 13 && age < 20:
+//     console.log(firstName + " is a teenager. ");
+//     break;
+//   case age >= 20 && age < 30:
+//     console.log(firstName + " is a young man. ");
+//     break;
+//   default:
+//     console.log(firstName + " is a man. ");
+// }
+
+/**
+ * Truthy and Falsy values and equality operators 
+ * 
+ * falsy values: undefined, null, 0, '', NaN
+ * 
+ * truthy values: NOT falsy values
+ */
+
+// var height;
+// height = '23';
+// if (height || height === 0) {
+//   console.log('Variable is defined');
+
+// } else {
+//   console.log('Variable has not been defined. ');
+
+// }
+
+// //equality operators
+// if (height == '23') {
+//   console.log('The == operator does type coercion');
+// }
+
+/*****************************
+* CODING CHALLENGE 2
+*/
+
+/*
+John and Mike both play basketball in different teams. In the latest 3 games, John's team scored 89, 120 and 103 points, while Mike's team scored 116, 94 and 123 points.
+
+1. Calculate the average score for each team
+2. Decide which teams wins in average (highest average score), and print the winner to the console. Also include the average score in the output.
+3. Then change the scores to show different winners. Don't forget to take into account there might be a draw (the same average score)
+
+4. EXTRA: Mary also plays basketball, and her team scored 97, 134 and 105 points. Like before, log the average winner to the console. HINT: you will need the && operator to take the decision. If you can't solve this one, just watch the solution, it's no problem :)
+5. Like before, change the scores to generate different winners, keeping in mind there might be draws.
+
+GOOD LUCK 😀
+*/
+
+// assign variables for each team
+var johnTeamAVGPTS, mikeTeamAVGPTS, maryTeamAVGPTS;
+johnTeamAVGPTS = (89 + 120 + 103) / 3;
+mikeTeamAVGPTS = (116 + 94 + 123) / 3;
+maryTeamAVGPTS = (97 + 104 + 135) / 3;
+  console.log('John\'s Team average is ' + johnTeamAVGPTS + ' points.');
+  console.log('Mike\'s Team average is ' + mikeTeamAVGPTS + ' points.');
+  console.log('Mary\'s Team average is ' + maryTeamAVGPTS + ' points.');
+if (johnTeamAVGPTS > mikeTeamAVGPTS && johnTeamAVGPTS > maryTeamAVGPTS) {
+console.log('John\'s Team WINS! with ' + johnTeamAVGPTS + ' average points.');
+} else if (mikeTeamAVGPTS > johnTeamAVGPTS && mikeTeamAVGPTS > maryTeamAVGPTS) {
+console.log('Mike\'s team WINS! with ' + mikeTeamAVGPTS + ' average points.');
+} else if (maryTeamAVGPTS > johnTeamAVGPTS && maryTeamAVGPTS > mikeTeamAVGPTS) {
+console.log('Mary\'s team WINS! with ' + maryTeamAVGPTS + ' average points.');
+}  else {
+console.log('It\'s a TIE!');
 }
