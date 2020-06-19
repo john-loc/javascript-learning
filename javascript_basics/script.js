@@ -1,10 +1,10 @@
-// Variables and data types. 
+// Variables and data types.
 
 // var firstName = 'John';
 // console.log(firstName);
 
 // var lastName = 'Smith';
-// var age = 28; 
+// var age = 28;
 
 // var fullAge = true;
 // console.log(fullAge);
@@ -15,20 +15,19 @@
 // job = 'Teacher';
 // console.log(job);
 
-
 // // variable naming rules
 // var $3 = 3;
 // console.log($3)
 
 /******** Variable mutation and type coercion.
- * 
+ *
  */
 // type coercion
 // var firstName = 'John';
 // var age = 28;
 // console.log(firstName + ' ' + age);
 
-// var job, isMarried; 
+// var job, isMarried;
 // job = 'teacher';
 // isMarried = false;
 
@@ -41,13 +40,13 @@
 // alert(firstName + ' is a ' + age +  ' year old ' + job + '. Is he married? ' + isMarried);
 
 // var lastName = prompt('What is his last Name?');
-// console.log(firstName + ' ' + lastName); 
+// console.log(firstName + ' ' + lastName);
 
 /***************
- * Basic operators  
+ * Basic operators
  */
 
- // Math operators
+// Math operators
 //  var year, yearJohn, yearMark;
 //  now = 2018
 //  ageJohn = 28;
@@ -185,16 +184,16 @@ GOOD LUCK 😀
  *
  */
 
- // AND (&&) => true if ALL are true
- // OR (||) => true if ONE is true
- // NOT (!) => inverts true/false value
+// AND (&&) => true if ALL are true
+// OR (||) => true if ONE is true
+// NOT (!) => inverts true/false value
 
 //  var firstName = 'John';
 //  var age = 29;
- 
+
 //  if (age < 13) {
 //      console.log(firstName + ' is a boy. ');
-//  } else if (age >= 13 && age < 20) {//between 13 and 20 = age >= 13 AND < 20 
+//  } else if (age >= 13 && age < 20) {//between 13 and 20 = age >= 13 AND < 20
 //      console.log(firstName + ' is a teenager. ');
 //  } else if (age >= 20 && age < 30) {
 //      console.log(firstName + ' is a young man. ');
@@ -206,49 +205,56 @@ GOOD LUCK 😀
 /****
  * Ternary Operator and Switch Statements
  */
- // ternary operator
- var firstName = 'John';
- var age = 25;
+// ternary operator
+// var firstName = "John";
+// var age = 25;
 
- age >= 18 ? console.log(firstName + ' drinks beer. ')
- : console.log(firstName + ' Drinks Juice. ');
+// age >= 18
+//   ? console.log(firstName + " drinks beer. ")
+//   : console.log(firstName + " Drinks Juice. ");
 
- var drink = age >= 18 ? 'beer' : 'juice';
- console.log(drink);
+// var drink = age >= 18 ? "beer" : "juice";
+// console.log(drink);
 
- // same as this:
-//  if (age >= 18) { 
+// same as this:
+//  if (age >= 18) {
 //      var drink = 'beer';
 //  } else {
 //      var drink = 'juice':
 //  }
 
 // switch statement
-var job = 'cop';
-switch (job){
-    case 'teacher':
-        console.log(firstName + ' Teaches kids how to code. ');
-        break;
-    case 'driver': 
-        console.log(firstName + 'Driver drives a uber');
-    case 'designer':
-        break;
-        console.log(firstName + ' Designs awesome websites. ');
-        break;
-    default: 
-        console.log(firstName + ' does something else. ');
+var age = 20;
+var firstName = "John";
+var job = "cop";
+switch (job) {
+  case "teacher":
+    console.log(firstName + " Teaches kids how to code. ");
+    break;
+  case "driver":
+    console.log(firstName + "Driver drives a uber");
+    break;
+  case "designer":
+    console.log(firstName + " Designs awesome websites. ");
+    break;
+  default:
+    console.log(firstName + " does something else. ");
+    break;
 }
 
-switch (true)  {
-    case age < 13:
-        console.log(firstName + ' is a boy. ');
-        break;
-    case age >= 13 && age < 20:
-        console.log(firstName + ' is a teenager. ');
-        break;
-    case age >= 20 && age < 30:
-        console.log(firstName + ' is a young man. ');
-        break;
-    default: 
-        console.log(firstName + ' is a man. ');
+// var age = 20;
+// var firstName = "John";
+switch (true) {
+  case age < 13:
+    console.log(firstName + " is a boy. ");
+    break;
+  case age >= 13 && age < 20:
+    console.log(firstName + " is a teenager. ");
+    break;
+  case age >= 20 && age < 30:
+    console.log(firstName + " is a young man. ");
+    break;
+  default:
+    console.log(firstName + " is a man. ");
+    break;
 }
